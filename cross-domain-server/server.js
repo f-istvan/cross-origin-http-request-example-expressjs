@@ -1,5 +1,5 @@
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
 var port = 3000;
 
 // Only google.com is allowed to send CORS request
@@ -12,6 +12,6 @@ app.get('/', function (req, res) {
   res.send('Hello World');
 });
 
-app.listen(port function() {
+app.listen(port, function() {
 	console.log('Server listening on port:', port);
 });
