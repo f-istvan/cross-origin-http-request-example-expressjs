@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CORS</title>
+  <script>
+	function createCORSRequest(method, url) {
+	  var xhr = new XMLHttpRequest();
+	  xhr.open(method, url, true);
+	  return xhr;
+	};
+
+	function sendCorsRequest() {
+		var url = 'http://localhost:3000';
+		var method = 'GET';
+		var xhr = createCORSRequest(method, url);
+
+		xhr.onload = function() {
+		  console.log('onload called');
+		};
+
+		xhr.onerror = function() {
+		  console.log('onerror called');
+		};
+
+		xhr.send();
+	}
+  </script>
+</head>
+
+<body>
+	<button type="button" onclick="sendCorsRequest()">Send CORS Request</button>
+</body>
+</html>

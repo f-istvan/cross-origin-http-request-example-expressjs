@@ -1,0 +1,9 @@
+{
+  "name": "expressjs-cors-example",
+  "version": "0.1.0",
+  "main": "server.js",
+  "dependencies": {
+  	"express": "4.14.0",
+  	"cors": "2.8.1"
+  }
+}
