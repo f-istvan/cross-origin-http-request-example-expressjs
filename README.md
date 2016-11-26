@@ -1,4 +1,4 @@
-#### Keywords for this tutorial:
+### Keywords for this tutorial:
 
  - Cross-origin resource sharing 
  - HTTP access control (CORS) 
@@ -32,8 +32,12 @@ $ curl -v -H "Origin: localhost:2000" localhost:3000
 Check ***Host***, ***Origin*** and ***Access-Control-Allow-Origin*** in the output:
 
 > ...
+> 
 > Host: localhost:3000
+> 
 > Origin: localhost:2000
+> 
 > ...
+> 
 >  Access-Control-Allow-Origin: google.com
 >  ...
